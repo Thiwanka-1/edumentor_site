@@ -3,63 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduMentor | AI Educational Platform</title>
-    <!-- Connects to your CSS file -->
+    <title>EduMentor | Next-Gen AI Learning</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Import a modern Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <!-- Sticky Glassmorphism Navigation -->
     <nav class="glass-nav">
         <div class="nav-container">
-            <div class="logo">EduMentor.AI</div>
+            <div class="logo"><i class="fa-solid fa-brain"></i> EduMentor</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#domain">Domain</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#solution">Solution</a></li>
                 <li><a href="#milestones">Milestones</a></li>
                 <li><a href="#documents">Documents</a></li>
-                <li><a href="#presentations">Presentations</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Home Section -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container text-center">
-            <h1 class="gradient-text">Next-Gen Learning.</h1>
+        <div class="hero-overlay"></div>
+        <div class="container text-center hero-content">
+            <h1 class="gradient-text">Welcome to EduMentor</h1>
             <p class="subtitle">An AI-driven educational platform featuring a peer-like study agent, adaptive reinforcement engine, and interactive avatar tutor.</p>
+            <a href="#research" class="btn mt-4">Explore Our Research</a>
         </div>
     </section>
 
-    <!-- Domain Section -->
-    <section id="domain">
+    <!-- Our Research Section -->
+    <section id="research">
         <div class="container">
-            <div class="glass-card">
-                <h2>Project Domain</h2>
-                <h3>Literature Survey & Research Gap</h3>
-                <p>While current e-learning platforms provide static content, they lack personalized, adaptive interactions. EduMentor fills this gap by deploying an AI avatar tutor that adjusts to the user's learning pace.</p>
+            <h2 class="text-center">Our <span class="gradient-text">Research</span></h2>
+            
+            <div class="grid-2 mt-4">
+                <div class="glass-card">
+                    <h3><i class="fa-solid fa-book-open icon-accent"></i> Literature Survey</h3>
+                    <p>Current e-learning systems provide static, one-size-fits-all content. While platforms exist to host educational materials, they severely lack the ability to adapt to an individual student's cognitive pace. Recent studies show that students retain significantly more information when interacting with a responsive, peer-like entity rather than passively consuming text or video.</p>
+                </div>
                 
-                <h3>Methodology & Technologies Used</h3>
-                <p>Developed using a robust MERN stack architecture (MongoDB, Express.js, React, Node.js), powered by localized Large Language Models (LLMs) and advanced Retrieval-Augmented Generation (RAG) for highly accurate, contextual tutoring.</p>
+                <div class="glass-card">
+                    <h3><i class="fa-solid fa-triangle-exclamation icon-accent"></i> Research Gap</h3>
+                    <p>There is a distinct lack of personalized, real-time feedback mechanisms in traditional Learning Management Systems (LMS). Furthermore, existing tools rarely integrate advanced Retrieval-Augmented Generation (RAG) to allow students to query their specific course materials interactively. The gap lies in the absence of a localized, context-aware AI tutor.</p>
+                </div>
+            </div>
+
+            <div class="glass-card mt-4 text-center border-accent">
+                <h3><i class="fa-solid fa-circle-question icon-accent"></i> Research Problem</h3>
+                <p class="lead-text">"How can we effectively increase student engagement, knowledge retention, and academic confidence through the use of a localized, context-aware AI educational platform?"</p>
+            </div>
+
+            <h2 class="text-center mt-5">Project <span class="gradient-text">Objectives</span></h2>
+            
+            <div class="glass-card mb-4 text-center">
+                <h3>Main Objective</h3>
+                <p>To develop and deploy "EduMentor," an intelligent web-based educational platform that leverages locally hosted Large Language Models and MERN stack architecture to provide an adaptive, interactive, and highly personalized learning environment.</p>
+            </div>
+
+            <div class="grid-4 mt-4">
+                <div class="glass-card text-center text-sm">
+                    <i class="fa-solid fa-user-graduate doc-icon"></i>
+                    <h4>Studybuddy Agent</h4>
+                    <p>Develop a peer-like conversational agent to simulate collaborative study sessions.</p>
+                </div>
+                <div class="glass-card text-center text-sm">
+                    <i class="fa-solid fa-chart-line doc-icon"></i>
+                    <h4>Adaptive Reinforcement Engine</h4>
+                    <p>Implement an engine that dynamically adjusts quiz difficulty and learning paths based on performance.</p>
+                </div>
+                <div class="glass-card text-center text-sm">
+                    <i class="fa-solid fa-layer-group doc-icon"></i>
+                    <h4>Multiview Explanation Generator</h4>
+                    <p>Create a system that can explain complex concepts from multiple different angles and analogies.</p>
+                </div>
+                <div class="glass-card text-center text-sm">
+                    <i class="fa-solid fa-vr-cardboard doc-icon"></i>
+                    <h4>AI Avatar Tutor</h4>
+                    <p>Integrate a visual, interactive AI avatar to provide a human-like tutoring presence.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Milestones Section -->
-    <section id="milestones">
+    <!-- Our Solution & Tech Stack -->
+    <section id="solution" class="bg-light">
         <div class="container">
-            <div class="glass-card">
-                <h2>Milestones</h2>
-                <div class="grid-2">
-                    <div class="milestone-item"><strong>Project Proposal</strong><br>Completed - [Marks]</div>
-                    <div class="milestone-item"><strong>Progress Presentation 1</strong><br>Completed - [Marks]</div>
-                    <div class="milestone-item highlight"><strong>Progress Presentation 2</strong><br>March 2026 - Pending</div>
-                    <div class="milestone-item"><strong>Final Assessment & Viva</strong><br>Upcoming</div>
-                </div>
+            <h2 class="text-center">Our <span class="gradient-text">Solution</span></h2>
+            <div class="glass-card mb-5">
+                <p>EduMentor is a comprehensive cloud-native web application designed to bridge the gap between static learning and personalized tutoring. By utilizing PDF parsing and vector embeddings, the system ingests academic materials and uses cosine similarity searches to provide highly accurate, contextual answers. This ensures the AI does not hallucinate, but rather teaches directly from the syllabus.</p>
+            </div>
+
+            <h3 class="text-center mt-5">Technology Stack</h3>
+            <div class="grid-tech mt-4">
+                <div class="tech-card"><i class="fa-brands fa-react tech-icon" style="color: #06b6d4;"></i><p>React</p></div>
+                <div class="tech-card"><i class="fa-brands fa-node-js tech-icon" style="color: #10b981;"></i><p>Node.js & Express</p></div>
+                <div class="tech-card"><i class="fa-solid fa-database tech-icon" style="color: #10b981;"></i><p>MongoDB</p></div>
+                <div class="tech-card"><i class="fa-solid fa-microchip tech-icon" style="color: #4f46e5;"></i><p>Local LLMs & RAG</p></div>
+                <div class="tech-card"><i class="fa-brands fa-docker tech-icon" style="color: #3b82f6;"></i><p>Docker</p></div>
             </div>
         </div>
     </section>
@@ -67,48 +112,197 @@
     <!-- Documents Section -->
     <section id="documents">
         <div class="container">
-            <div class="glass-card text-center">
-                <h2>Project Documents</h2>
-                <div class="button-group">
-                    <a href="#" class="btn">Project Charter</a>
-                    <a href="#" class="btn">Proposal Document</a>
-                    <a href="#" class="btn">Methodology Report</a>
+            <h2 class="text-center">Our <span class="gradient-text">Documents</span></h2>
+            <div class="grid-3 mt-4">
+                <div class="doc-card">
+                    <i class="fa-solid fa-file-lines doc-icon"></i>
+                    <h3>Project Proposal</h3>
+                    <a href="YOUR_LINK_HERE" target="_blank" class="btn-outline">View Document</a>
+                </div>
+                <div class="doc-card">
+                    <i class="fa-solid fa-list-check doc-icon"></i>
+                    <h3>Checklist 1</h3>
+                    <a href="YOUR_LINK_HERE" target="_blank" class="btn-outline">View Document</a>
+                </div>
+                <div class="doc-card">
+                    <i class="fa-solid fa-chalkboard-user doc-icon"></i>
+                    <h3>Progress Presentation 1</h3>
+                    <a href="YOUR_LINK_HERE" target="_blank" class="btn-outline">View Document</a>
+                </div>
+                <div class="doc-card">
+                    <i class="fa-solid fa-flask doc-icon"></i>
+                    <h3>Research Paper</h3>
+                    <a href="YOUR_LINK_HERE" target="_blank" class="btn-outline">View Document</a>
+                </div>
+                <div class="doc-card">
+                    <i class="fa-solid fa-chalkboard-user doc-icon"></i>
+                    <h3>Progress Presentation 2</h3>
+                    <a href="YOUR_LINK_HERE" target="_blank" class="btn-outline">View Document</a>
+                </div>
+                <div class="doc-card">
+                    <i class="fa-solid fa-file-pdf doc-icon"></i>
+                    <h3>Final Report & Viva</h3>
+                    <a href="YOUR_LINK_HERE" target="_blank" class="btn-outline">View Document</a>
+                </div>
+                <div class="doc-card">
+                    <i class="fa-solid fa-list-check doc-icon"></i>
+                    <h3>Checklist 2</h3>
+                    <a href="YOUR_LINK_HERE" target="_blank" class="btn-outline">View Document</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Presentations Section -->
-    <section id="presentations">
+    <!-- Milestones Section (Futuristic Timeline) -->
+    <section id="milestones" class="bg-light">
         <div class="container">
-            <div class="glass-card text-center">
-                <h2>Presentation Slides</h2>
-                <div class="button-group">
-                    <a href="#" class="btn btn-outline">Proposal Slides</a>
-                    <a href="#" class="btn btn-outline">Progress 1 Slides</a>
-                    <a href="#" class="btn btn-outline">Progress 2 Slides</a>
+            <h2 class="text-center">Our <span class="gradient-text">Milestones</span></h2>
+            <div class="timeline mt-5">
+                <!-- Exact timeline from your screenshots -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date-badge">Aug 2024</span>
+                        <h3>Project Proposal</h3>
+                        <p>A Project Proposal is presented to potential sponsors or clients to receive funding or get your project approved.</p>
+                        <div class="progress-bar-container"><div class="progress-bar" style="width: 12%;"></div></div>
+                        <small>Marks Allocated: 12</small>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date-badge">Dec 2024</span>
+                        <h3>Progress Presentation I</h3>
+                        <p>Reviews the 50% completion status of the project. Reveals gaps or inconsistencies in design/requirements.</p>
+                        <div class="progress-bar-container"><div class="progress-bar" style="width: 15%;"></div></div>
+                        <small>Marks Allocated: 15</small>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date-badge">March 2025</span>
+                        <h3>Progress Presentation II</h3>
+                        <p>Reviews the 90% completion status demonstration of the project. Along with a Poster presentation.</p>
+                        <div class="progress-bar-container"><div class="progress-bar" style="width: 18%;"></div></div>
+                        <small>Marks Allocated: 18</small>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date-badge">March 2025</span>
+                        <h3>Research Paper</h3>
+                        <p>Describes what you contribute to existing knowledge, giving due recognition to all work referred to.</p>
+                        <div class="progress-bar-container"><div class="progress-bar" style="width: 10%;"></div></div>
+                        <small>Marks Allocated: 10</small>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date-badge">April 2025</span>
+                        <h3>Final Report</h3>
+                        <p>Evaluates the completed project done throughout the year. Includes individual & group reports.</p>
+                        <div class="progress-bar-container"><div class="progress-bar" style="width: 19%;"></div></div>
+                        <small>Marks Allocated: 19</small>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date-badge">May 2025</span>
+                        <h3>Final Presentation & Viva</h3>
+                        <p>Viva is held individually to assess each member's contribution to the project.</p>
+                        <div class="progress-bar-container"><div class="progress-bar" style="width: 20%;"></div></div>
+                        <small>Marks Allocated: 20</small>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date-badge">May 2025</span>
+                        <h3>Website Assessment</h3>
+                        <p>The Website helps to promote our research project and reveals all details related to the project.</p>
+                        <div class="progress-bar-container"><div class="progress-bar" style="width: 2%;"></div></div>
+                        <small>Marks Allocated: 2</small>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date-badge">June 2025</span>
+                        <h3>Logbook</h3>
+                        <p>Status of the project is validated through the Logbook. This also includes Status documents 1 & 2.</p>
+                        <div class="progress-bar-container"><div class="progress-bar" style="width: 4%;"></div></div>
+                        <small>Marks Allocated: 4</small>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about">
+    <!-- Meet Our Team Section -->
+    <section id="team">
         <div class="container">
-            <div class="glass-card">
-                <h2>About the Team</h2>
-                <p class="text-center">EduMentor is engineered by a team of four final-year researchers, developed under the expert supervision of Prof. Nuwan.</p>
+            <h2 class="text-center">Meet Our <span class="gradient-text">Team</span></h2>
+            <div class="grid-team mt-5">
+                <div class="team-card glass-card">
+                    <div class="avatar"><i class="fa-solid fa-user-tie"></i></div>
+                    <h4 class="role-badge">Supervisor</h4>
+                    <h3>Prof. Nuwan</h3>
+                    <p>Project Supervisor</p>
+                </div>
+                <div class="team-card glass-card border-accent">
+                    <div class="avatar"><i class="fa-solid fa-user-astronaut"></i></div>
+                    <h4 class="role-badge">Team Leader</h4>
+                    <h3>[Your Name]</h3>
+                    <p>AI Engineer / Full-Stack</p>
+                </div>
+                <div class="team-card glass-card">
+                    <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                    <h4 class="role-badge">Team Member</h4>
+                    <h3>[Member 2 Name]</h3>
+                    <p>Frontend Architecture</p>
+                </div>
+                <div class="team-card glass-card">
+                    <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                    <h4 class="role-badge">Team Member</h4>
+                    <h3>[Member 3 Name]</h3>
+                    <p>Backend / DevOps</p>
+                </div>
+                <div class="team-card glass-card">
+                    <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                    <h4 class="role-badge">Team Member</h4>
+                    <h3>[Member 4 Name]</h3>
+                    <p>Vector Data Specialist</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Us Section -->
-    <section id="contact">
+    <!-- Contact Form Section -->
+    <section id="contact" class="bg-light">
         <div class="container">
-            <div class="glass-card text-center">
-                <h2>Contact Us</h2>
-                <p>Reach out to the research team for queries and access.</p>
-                <a href="mailto:team@edumentor-project.com" class="btn">team@edumentor-project.com</a>
+            <h2 class="text-center">Get In <span class="gradient-text">Touch</span></h2>
+            <div class="contact-wrapper glass-card mt-4">
+                <!-- Paste your Formspree link here -->
+                <form action="https://formspree.io/f/xkokanwk" method="POST" class="contact-form">
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="input-group">
+                        <label>Message or Query</label>
+                        <textarea name="message" rows="5" required placeholder="Type your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
             </div>
         </div>
     </section>
