@@ -1,0 +1,178 @@
+/* --- GLOBALS & VARIABLES --- */
+:root {
+    --bg-color: #f4f7fc;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --accent-blue: #0066ff;
+    --accent-cyan: #00d2ff;
+    --glass-bg: rgba(255, 255, 255, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.8);
+    --shadow: 0 8px 32px rgba(31, 38, 135, 0.07);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg-color);
+    background-image: radial-gradient(circle at 15% 50%, rgba(0, 210, 255, 0.08), transparent 25%),
+                      radial-gradient(circle at 85% 30%, rgba(0, 102, 255, 0.08), transparent 25%);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center { text-align: center; }
+
+/* --- NAVIGATION (GLASSMORPHISM) --- */
+.glass-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 15px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover { color: var(--accent-blue); }
+
+/* --- SECTIONS & TYPOGRAPHY --- */
+section { padding: 80px 0; }
+
+h1 { font-size: 4rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
+h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 30px; color: var(--text-main); }
+h3 { font-size: 1.5rem; margin-top: 25px; margin-bottom: 10px; color: var(--accent-blue); }
+p { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 15px; }
+
+.gradient-text {
+    background: linear-gradient(to right, var(--accent-blue), var(--accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle { font-size: 1.4rem; max-width: 700px; margin: 0 auto; }
+
+/* --- GLASS CARDS --- */
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.glass-card:hover { transform: translateY(-5px); }
+
+/* --- GRID LAYOUTS --- */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.milestone-item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.milestone-item.highlight {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.2);
+}
+
+/* --- BUTTONS --- */
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.btn {
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-cyan));
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
+}
+
+.btn:hover { box-shadow: 0 6px 20px rgba(0, 102, 255, 0.5); transform: translateY(-2px); }
+
+.btn-outline {
+    background: transparent;
+    color: var(--accent-blue);
+    border: 2px solid var(--accent-blue);
+    box-shadow: none;
+}
+
+.btn-outline:hover {
+    background: var(--accent-blue);
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-muted);
+    background: white;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* --- RESPONSIVE DESIGN (MOBILES/TABLETS) --- */
+@media (max-width: 768px) {
+    .nav-container { flex-direction: column; gap: 15px; }
+    .nav-links { flex-wrap: wrap; justify-content: center; }
+    h1 { font-size: 2.5rem; }
+    .grid-2 { grid-template-columns: 1fr; }
+    .glass-card { padding: 25px; }
+}
