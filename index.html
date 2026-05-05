@@ -44,26 +44,59 @@
             <div class="grid-2 mt-4">
                 <div class="glass-card">
                     <h3><i class="fa-solid fa-book-open icon-accent"></i> Literature Survey</h3>
-                    <p>Current e-learning systems provide static, one-size-fits-all content. While platforms exist to host educational materials, they severely lack the ability to adapt to an individual student's cognitive pace. Recent studies show that students retain significantly more information when interacting with a responsive, peer-like entity rather than passively consuming text or video.</p>
+                    <p>The landscape of higher education has become increasingly digitized, relying heavily on traditional Learning Management Systems (LMS) such as Moodle, Canvas, and Blackboard. While these platforms excel at administrative tasks and content hosting, current literature indicates they provide a largely static, "one-size-fits-all" learning experience. Educational psychology, particularly Cognitive Load Theory, emphasizes that students learn at different cognitive paces and possess varying learning preferences. However, traditional e-learning forces students to passively consume text or video, severely lacking the ability to adapt to an individual student's real-time comprehension level.
+
+<br><br>Recent advancements in Intelligent Tutoring Systems (ITS) have attempted to bridge this gap using rule-based algorithms, but they often feel rigid and robotic. Studies show that students retain significantly more information and exhibit higher academic confidence when interacting with a responsive, peer-like entity rather than a cold, authoritative interface. Furthermore, while generic Generative AI tools (like standard ChatGPT) have entered the academic sphere, literature warns of their tendency to hallucinate facts and provide explanations that drift far beyond the scope of a specific university syllabus. There is a documented need for systems that combine the conversational fluidity of modern Large Language Models (LLMs) with strict, curriculum-bound pedagogical frameworks.</p>
                 </div>
                 
                 <div class="glass-card">
                     <h3><i class="fa-solid fa-triangle-exclamation icon-accent"></i> Research Gap</h3>
-                    <p>There is a distinct lack of personalized, real-time feedback mechanisms in traditional Learning Management Systems (LMS). Furthermore, existing tools rarely integrate advanced Retrieval-Augmented Generation (RAG) to allow students to query their specific course materials interactively. The gap lies in the absence of a localized, context-aware AI tutor.</p>
+                    <p>Despite the rapid integration of AI in educational technology, there remains a distinct lack of personalized, real-time feedback mechanisms that account for a student's emotional and motivational state. Existing tools rarely integrate advanced Retrieval-Augmented Generation (RAG) to allow students to query their specific, localized course materials interactively. When students use generic AI, they often receive overly complex or irrelevant answers because the AI lacks the specific context of their lecture slides and university curriculum.
+
+<br><br>Furthermore, a significant gap exists in multimodal and empathetic AI tutoring. Current platforms do not dynamically adjust their pedagogical strategies based on real-time sentiment analysis; they treat a highly motivated student exactly the same as a severely burnt-out student. Additionally, when a student fails to understand a concept, existing systems usually just repeat the same text. There is an absence of a localized, context-aware AI tutor that can seamlessly pivot between different explanation styles (such as analogies, code snippets, or simple summaries) without forcing the student to re-prompt the AI or lose their learning context. Finally, current systems fail to bridge the gap between AI tutoring and human collaboration, often leaving students isolated rather than connecting them with human peers based on complementary knowledge gaps (Zone of Proximal Development).</p>
                 </div>
             </div>
 
-            <div class="glass-card mt-4 text-center border-accent">
-                <h3><i class="fa-solid fa-circle-question icon-accent"></i> Research Problem</h3>
-                <p class="lead-text">"How can we effectively increase student engagement, knowledge retention, and academic confidence through the use of a localized, context-aware AI educational platform?"</p>
-            </div>
+           <div class="glass-card mt-4 border-accent">
+    <h3 class="text-center"><i class="fa-solid fa-circle-question icon-accent"></i> Research Problem</h3>
+    
+    <p class="text-center mt-3">The core challenge addressed by this research is defined by the following primary question:</p>
+    
+    <p class="lead-text text-center" style="font-style: italic; font-weight: 500;">
+        "How can we effectively increase student engagement, knowledge retention, and academic confidence through the use of a localized, emotionally intelligent, and context-aware AI educational platform?"
+    </p>
+
+    <div class="mt-4" style="text-align: left;">
+        <p>To solve this overarching problem, our research deconstructs it into several critical sub-problems that the EduMentor platform addresses:</p>
+        <ul style="padding-left: 20px;">
+            <li class="mb-2">
+                <strong>The Contextual Accuracy Problem:</strong> How can we utilize Retrieval-Augmented Generation (RAG) to restrict AI responses strictly to uploaded university materials, eliminating hallucinations and ensuring syllabus-compliant explanations?
+            </li>
+            <li class="mb-2">
+                <strong>The Pedagogical Empathy Problem:</strong> How can we implement real-time Natural Language Processing (NLP) to silently evaluate a student's mood and motivation, allowing the AI to dynamically adjust its tone and teaching complexity to prevent academic burnout?
+            </li>
+            <li class="mb-2">
+                <strong>The Cognitive Style Problem:</strong> How can we overcome the limitations of single-format learning by generating simultaneous, multi-view explanations (Simple, Analogy, Code, Summary) that cater to diverse learning preferences?[cite: 1]
+            </li>
+            <li class="mb-2">
+                <strong>The Knowledge Retention Problem:</strong> How can an AI system automatically synthesize conversational history into actionable study plans and personalized reinforcement tasks (flashcards and quizzes) to ensure long-term retention?[cite: 1]
+            </li>
+            <li class="mb-2">
+                <strong>The Peer Isolation Problem:</strong> How can we algorithmically map students' strong and weak academic concepts to facilitate optimal peer-to-peer mentorship connections within a digital ecosystem?
+            </li>
+        </ul>
+    </div>
+</div>
 
             <h2 class="text-center mt-5">Project <span class="gradient-text">Objectives</span></h2>
             
-            <div class="glass-card mb-4 text-center">
-                <h3>Main Objective</h3>
-                <p>To develop and deploy "EduMentor," an intelligent web-based educational platform that leverages locally hosted Large Language Models and MERN stack architecture to provide an adaptive, interactive, and highly personalized learning environment.</p>
-            </div>
+           <div class="glass-card mb-4 border-accent text-center">
+    <h3><i class="fa-solid fa-bullseye icon-accent"></i> Main Objective</h3>
+    
+    <p class="lead-text mt-3 mx-auto" style="max-width: 900px; line-height: 1.6;">
+        To develop and deploy "EduMentor," an intelligent web-based educational platform that leverages locally hosted Large Language Models and MERN stack architecture to provide an adaptive, interactive, and highly personalized learning environment.
+    </p>
+</div>
 
             <div class="grid-4 mt-4">
                 <div class="glass-card text-center text-sm">
@@ -94,9 +127,27 @@
     <section id="solution" class="bg-light">
         <div class="container">
             <h2 class="text-center">Our <span class="gradient-text">Solution</span></h2>
-            <div class="glass-card mb-5">
-                <p>EduMentor is a comprehensive cloud-native web application designed to bridge the gap between static learning and personalized tutoring. By utilizing PDF parsing and vector embeddings, the system ingests academic materials and uses cosine similarity searches to provide highly accurate, contextual answers. This ensures the AI does not hallucinate, but rather teaches directly from the syllabus.</p>
-            </div>
+            <div class="glass-card mb-5" style="text-align: justify; line-height: 1.7;">
+    <p class="mb-3">
+        <strong>EduMentor</strong> is a comprehensive cloud-native web application built on the MERN stack that radically transforms static e-learning into an adaptive, highly personalized tutoring ecosystem. At its core, the platform leverages fine-tuned Large Language Models (LLMs) combined with an advanced Retrieval-Augmented Generation (RAG) pipeline[cite: 1]. By utilizing PDF parsing and dense vector embeddings, the system ingests academic lecture materials and applies cosine similarity searches to retrieve highly relevant context. This strict academic grounding ensures the AI does not hallucinate, but rather acts as a localized tutor teaching directly from the university syllabus[cite: 1].
+    </p>
+
+    <p class="mb-3">
+        Beyond accurate information retrieval, EduMentor introduces <em>Pedagogical Empathy</em> through its innovative "Shadow Observer" NLP engine. This background service continuously analyzes the student's conversational input in real-time, extracting their current mood and motivation levels on a quantifiable scale. These psychological metrics dynamically adjust the StudyBuddy agent's instructional tone—offering gentle, highly empathetic, step-by-step encouragement during moments of high stress or burnout, while safely increasing academic rigor during periods of high motivation.
+    </p>
+
+    <p class="mb-3">
+        To cater to diverse cognitive preferences, the platform integrates a <strong>Multi-View Explanation Generator (MVEG)</strong>[cite: 1]. Rather than generating a single block of monolithic text, MVEG simultaneously synthesizes explanations across four distinct conceptual views: Simple, Analogy, Code, and Summary[cite: 1]. This architecture allows learners to instantly pivot between learning styles without requiring prompt regeneration or losing context. This multimodal experience is further enriched by an Interactive 3D Avatar Mentor providing real-time visual and voice feedback[cite: 1].
+    </p>
+
+    <p class="mb-3">
+        To ensure long-term knowledge retention, the <strong>Adaptive Concept Reinforcement Engine (ACE)</strong>[cite: 1] automatically synthesizes the student's chat history and identified knowledge gaps into personalized reinforcement tasks, including targeted flashcards and quizzes[cite: 1]. 
+    </p>
+
+    <p class="mb-0">
+        Finally, EduMentor bridges the gap between AI assistance and human connection through its Semantic ZPD Peer Matching algorithm. By maintaining a continuous, normalized map of a student's strong and weak academic concepts, the system identifies optimal peer-to-peer mentorship pairings based on Vygotsky's Zone of Proximal Development. When a complementary match is found, the platform automatically generates a structured, downloadable joint study plan, fostering a collaborative, human-driven learning network empowered by AI.
+    </p>
+</div>
 
             <h3 class="text-center mt-5">Technology Stack</h3>
             <div class="grid-tech mt-4">
