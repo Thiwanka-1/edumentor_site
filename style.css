@@ -119,3 +119,422 @@ footer { text-align: center; padding: 30px; color: var(--text-muted); background
     .nav-links { flex-wrap: wrap; justify-content: center; }
     h1 { font-size: 2.5rem; }
 }
+
+/* --- POLISHED RESEARCH, OBJECTIVES, SOLUTION & TEAM UPGRADES --- */
+.research-section,
+.solution-section,
+.team-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.research-section::before,
+.solution-section::before,
+.team-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 8% 10%, rgba(6, 182, 212, 0.14), transparent 32%),
+        radial-gradient(circle at 92% 18%, rgba(79, 70, 229, 0.12), transparent 30%),
+        linear-gradient(180deg, rgba(255,255,255,0), rgba(248,250,252,0.7));
+    z-index: 0;
+}
+
+.research-section .container,
+.solution-section .container,
+.team-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.research-section h2,
+.solution-section h2,
+.team-section h2 {
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.research-section h2::after,
+.solution-section h2::after,
+.team-section h2::after {
+    content: '';
+    display: block;
+    width: 88px;
+    height: 4px;
+    margin: 14px auto 0;
+    border-radius: 999px;
+    background: var(--gradient);
+    box-shadow: 0 8px 24px rgba(6, 182, 212, 0.28);
+}
+
+.research-grid {
+    align-items: stretch;
+}
+
+.research-info-card,
+.research-problem-card,
+.objective-hero-card,
+.solution-narrative-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(6, 182, 212, 0.14);
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.96), rgba(255,255,255,0.84)) padding-box,
+        linear-gradient(135deg, rgba(6,182,212,0.34), rgba(79,70,229,0.28)) border-box;
+    backdrop-filter: blur(12px);
+}
+
+.research-info-card::before,
+.objective-hero-card::before,
+.solution-narrative-card::before {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    right: -95px;
+    top: -95px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(6, 182, 212, 0.18), transparent 68%);
+}
+
+.research-info-card h3,
+.research-problem-card h3,
+.objective-hero-card h3,
+.solution-narrative-card h3 {
+    letter-spacing: -0.02em;
+}
+
+.research-info-card p,
+.research-problem-card p,
+.solution-narrative-card p {
+    color: #334155;
+    line-height: 1.85;
+}
+
+.card-label {
+    position: absolute;
+    top: 26px;
+    right: 28px;
+    font-size: 3.7rem;
+    font-weight: 800;
+    line-height: 1;
+    color: rgba(6, 182, 212, 0.08);
+    letter-spacing: -0.08em;
+}
+
+.literature-card,
+.gap-card {
+    padding-top: 42px;
+}
+
+.research-info-card .icon-accent {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    border-radius: 14px;
+    color: #fff;
+    background: var(--gradient);
+    box-shadow: 0 12px 26px rgba(6, 182, 212, 0.22);
+}
+
+.research-problem-card {
+    padding: 45px;
+    border-top: 0;
+    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.08);
+}
+
+.research-problem-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    border-left: 6px solid var(--accent-primary);
+    pointer-events: none;
+}
+
+.problem-icon,
+.objective-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -8px auto 18px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.7rem;
+    background: var(--gradient);
+    box-shadow: 0 18px 38px rgba(79, 70, 229, 0.22);
+}
+
+.problem-list {
+    list-style: none;
+    padding-left: 0 !important;
+    display: grid;
+    gap: 14px;
+    margin-top: 22px;
+}
+
+.problem-list li {
+    position: relative;
+    margin: 0 !important;
+    padding: 18px 18px 18px 52px;
+    border-radius: 14px;
+    background: rgba(248, 250, 252, 0.88);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    color: #334155;
+}
+
+.problem-list li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 18px;
+    top: 20px;
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.72rem;
+    background: var(--gradient);
+}
+
+.objective-hero-card {
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 46px 52px;
+}
+
+.objective-hero-card .lead-text {
+    color: #1e293b;
+    font-size: 1.18rem;
+    font-style: normal;
+    font-weight: 500;
+    background: linear-gradient(135deg, rgba(6,182,212,0.08), rgba(79,70,229,0.08));
+    padding: 24px 28px;
+    border-radius: 18px;
+    border: 1px solid rgba(6, 182, 212, 0.15);
+}
+
+.objective-grid {
+    gap: 24px;
+}
+
+.objective-card {
+    position: relative;
+    min-height: 260px;
+    padding: 34px 24px;
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    background: linear-gradient(180deg, #fff 0%, #f8fafc 100%);
+}
+
+.objective-card::after {
+    content: '';
+    position: absolute;
+    inset: auto 24px 0 24px;
+    height: 4px;
+    border-radius: 999px 999px 0 0;
+    background: var(--gradient);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.objective-card:hover::after {
+    opacity: 1;
+}
+
+.objective-number {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--accent-secondary);
+    background: rgba(79, 70, 229, 0.08);
+    padding: 6px 10px;
+    border-radius: 999px;
+}
+
+.objective-card .doc-icon {
+    width: 78px;
+    height: 78px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    color: #fff;
+    background: var(--gradient);
+    font-size: 2rem;
+    box-shadow: 0 16px 34px rgba(6, 182, 212, 0.24);
+}
+
+.objective-card h4 {
+    font-size: 1.08rem;
+    margin-top: 4px;
+}
+
+.objective-card p {
+    color: var(--text-muted);
+}
+
+.solution-section {
+    background:
+        linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.solution-narrative-card {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 42px 46px;
+    text-align: left;
+    line-height: 1.7;
+    counter-reset: solution-step;
+}
+
+.solution-narrative-card p {
+    position: relative;
+    padding: 22px 24px 22px 74px;
+    margin-bottom: 18px !important;
+    border-radius: 16px;
+    background: rgba(248, 250, 252, 0.82);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.solution-narrative-card p::before {
+    counter-increment: solution-step;
+    content: counter(solution-step, decimal-leading-zero);
+    position: absolute;
+    left: 22px;
+    top: 24px;
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 800;
+    background: var(--gradient);
+    box-shadow: 0 12px 24px rgba(79, 70, 229, 0.20);
+}
+
+.solution-narrative-card p:last-child {
+    margin-bottom: 0 !important;
+}
+
+.grid-team {
+    align-items: stretch;
+}
+
+.team-card {
+    position: relative;
+    width: 275px;
+    padding: 32px 24px 28px;
+    overflow: hidden;
+    border: 1px solid rgba(6, 182, 212, 0.12);
+    background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(248,250,252,0.96));
+}
+
+.team-card::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 92px;
+    background: var(--gradient);
+    opacity: 0.12;
+}
+
+.team-card h3,
+.team-card h4,
+.team-card p,
+.team-card .avatar {
+    position: relative;
+    z-index: 1;
+}
+
+.avatar {
+    width: 118px;
+    height: 118px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #eef2ff, #ecfeff);
+    border: 4px solid #ffffff;
+    outline: 3px solid rgba(6, 182, 212, 0.45);
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.12);
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.avatar .avatar-fallback {
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-secondary);
+    font-size: 2.6rem;
+}
+
+.team-card:hover .avatar {
+    transform: translateY(-4px) scale(1.03);
+    transition: 0.3s ease;
+}
+
+.team-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.role-badge {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px 12px;
+    border-radius: 999px;
+    background: rgba(79, 70, 229, 0.08);
+}
+
+@media screen and (max-width: 768px) {
+    .research-problem-card,
+    .objective-hero-card,
+    .solution-narrative-card {
+        padding: 28px 22px;
+    }
+
+    .solution-narrative-card p {
+        padding: 62px 18px 18px;
+    }
+
+    .solution-narrative-card p::before {
+        top: 18px;
+        left: 18px;
+    }
+
+    .problem-list li {
+        padding-right: 14px;
+    }
+
+    .team-card {
+        width: min(100%, 310px);
+    }
+}
+

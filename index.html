@@ -37,19 +37,21 @@
     </section>
 
     <!-- Our Research Section -->
-    <section id="research">
+    <section id="research" class="research-section">
         <div class="container">
             <h2 class="text-center">Our <span class="gradient-text">Research</span></h2>
             
-            <div class="grid-2 mt-4">
-                <div class="glass-card">
+            <div class="grid-2 mt-4 research-grid">
+                <div class="glass-card research-info-card literature-card">
+                    <span class="card-label">01</span>
                     <h3><i class="fa-solid fa-book-open icon-accent"></i> Literature Survey</h3>
                     <p>The landscape of higher education has become increasingly digitized, relying heavily on traditional Learning Management Systems (LMS) such as Moodle, Canvas, and Blackboard. While these platforms excel at administrative tasks and content hosting, current literature indicates they provide a largely static, "one-size-fits-all" learning experience. Educational psychology, particularly Cognitive Load Theory, emphasizes that students learn at different cognitive paces and possess varying learning preferences. However, traditional e-learning forces students to passively consume text or video, severely lacking the ability to adapt to an individual student's real-time comprehension level.
 
 <br><br>Recent advancements in Intelligent Tutoring Systems (ITS) have attempted to bridge this gap using rule-based algorithms, but they often feel rigid and robotic. Studies show that students retain significantly more information and exhibit higher academic confidence when interacting with a responsive, peer-like entity rather than a cold, authoritative interface. Furthermore, while generic Generative AI tools (like standard ChatGPT) have entered the academic sphere, literature warns of their tendency to hallucinate facts and provide explanations that drift far beyond the scope of a specific university syllabus. There is a documented need for systems that combine the conversational fluidity of modern Large Language Models (LLMs) with strict, curriculum-bound pedagogical frameworks.</p>
                 </div>
                 
-                <div class="glass-card">
+                <div class="glass-card research-info-card gap-card">
+                    <span class="card-label">02</span>
                     <h3><i class="fa-solid fa-triangle-exclamation icon-accent"></i> Research Gap</h3>
                     <p>Despite the rapid integration of AI in educational technology, there remains a distinct lack of personalized, real-time feedback mechanisms that account for a student's emotional and motivational state. Existing tools rarely integrate advanced Retrieval-Augmented Generation (RAG) to allow students to query their specific, localized course materials interactively. When students use generic AI, they often receive overly complex or irrelevant answers because the AI lacks the specific context of their lecture slides and university curriculum.
 
@@ -57,7 +59,8 @@
                 </div>
             </div>
 
-           <div class="glass-card mt-4 border-accent">
+           <div class="glass-card mt-4 border-accent research-problem-card">
+    <div class="problem-icon"><i class="fa-solid fa-circle-question"></i></div>
     <h3 class="text-center"><i class="fa-solid fa-circle-question icon-accent"></i> Research Problem</h3>
     
     <p class="text-center mt-3">The core challenge addressed by this research is defined by the following primary question:</p>
@@ -68,7 +71,7 @@
 
     <div class="mt-4" style="text-align: left;">
         <p>To solve this overarching problem, our research deconstructs it into several critical sub-problems that the EduMentor platform addresses:</p>
-        <ul style="padding-left: 20px;">
+        <ul class="problem-list" style="padding-left: 20px;">
             <li class="mb-2">
                 <strong>The Contextual Accuracy Problem:</strong> How can we utilize Retrieval-Augmented Generation (RAG) to restrict AI responses strictly to uploaded university materials, eliminating hallucinations and ensuring syllabus-compliant explanations?
             </li>
@@ -76,10 +79,10 @@
                 <strong>The Pedagogical Empathy Problem:</strong> How can we implement real-time Natural Language Processing (NLP) to silently evaluate a student's mood and motivation, allowing the AI to dynamically adjust its tone and teaching complexity to prevent academic burnout?
             </li>
             <li class="mb-2">
-                <strong>The Cognitive Style Problem:</strong> How can we overcome the limitations of single-format learning by generating simultaneous, multi-view explanations (Simple, Analogy, Code, Summary) that cater to diverse learning preferences?[cite: 1]
+                <strong>The Cognitive Style Problem:</strong> How can we overcome the limitations of single-format learning by generating simultaneous, multi-view explanations (Simple, Analogy, Code, Summary) that cater to diverse learning preferences?
             </li>
             <li class="mb-2">
-                <strong>The Knowledge Retention Problem:</strong> How can an AI system automatically synthesize conversational history into actionable study plans and personalized reinforcement tasks (flashcards and quizzes) to ensure long-term retention?[cite: 1]
+                <strong>The Knowledge Retention Problem:</strong> How can an AI system automatically synthesize conversational history into actionable study plans and personalized reinforcement tasks (flashcards and quizzes) to ensure long-term retention?
             </li>
             <li class="mb-2">
                 <strong>The Peer Isolation Problem:</strong> How can we algorithmically map students' strong and weak academic concepts to facilitate optimal peer-to-peer mentorship connections within a digital ecosystem?
@@ -90,7 +93,8 @@
 
             <h2 class="text-center mt-5">Project <span class="gradient-text">Objectives</span></h2>
             
-           <div class="glass-card mb-4 border-accent text-center">
+           <div class="glass-card mb-4 border-accent text-center objective-hero-card">
+    <div class="objective-icon"><i class="fa-solid fa-bullseye"></i></div>
     <h3><i class="fa-solid fa-bullseye icon-accent"></i> Main Objective</h3>
     
     <p class="lead-text mt-3 mx-auto" style="max-width: 900px; line-height: 1.6;">
@@ -98,23 +102,27 @@
     </p>
 </div>
 
-            <div class="grid-4 mt-4">
-                <div class="glass-card text-center text-sm">
+            <div class="grid-4 mt-4 objective-grid">
+                <div class="glass-card text-center text-sm objective-card">
+                    <span class="objective-number">01</span>
                     <i class="fa-solid fa-user-graduate doc-icon"></i>
                     <h4>Studybuddy Agent</h4>
                     <p>Develop a peer-like conversational agent to simulate collaborative study sessions.</p>
                 </div>
-                <div class="glass-card text-center text-sm">
+                <div class="glass-card text-center text-sm objective-card">
+                    <span class="objective-number">02</span>
                     <i class="fa-solid fa-chart-line doc-icon"></i>
                     <h4>Adaptive Reinforcement Engine</h4>
                     <p>Implement an engine that dynamically adjusts quiz difficulty and learning paths based on performance.</p>
                 </div>
-                <div class="glass-card text-center text-sm">
+                <div class="glass-card text-center text-sm objective-card">
+                    <span class="objective-number">03</span>
                     <i class="fa-solid fa-layer-group doc-icon"></i>
                     <h4>Multiview Explanation Generator</h4>
                     <p>Create a system that can explain complex concepts from multiple different angles and analogies.</p>
                 </div>
-                <div class="glass-card text-center text-sm">
+                <div class="glass-card text-center text-sm objective-card">
+                    <span class="objective-number">04</span>
                     <i class="fa-solid fa-vr-cardboard doc-icon"></i>
                     <h4>AI Avatar Tutor</h4>
                     <p>Integrate a visual, interactive AI avatar to provide a human-like tutoring presence.</p>
@@ -124,12 +132,12 @@
     </section>
 
     <!-- Our Solution & Tech Stack -->
-    <section id="solution" class="bg-light">
+    <section id="solution" class="bg-light solution-section">
         <div class="container">
             <h2 class="text-center">Our <span class="gradient-text">Solution</span></h2>
-            <div class="glass-card mb-5" style="text-align: justify; line-height: 1.7;">
+            <div class="glass-card mb-5 solution-narrative-card">
     <p class="mb-3">
-        <strong>EduMentor</strong> is a comprehensive cloud-native web application built on the MERN stack that radically transforms static e-learning into an adaptive, highly personalized tutoring ecosystem. At its core, the platform leverages fine-tuned Large Language Models (LLMs) combined with an advanced Retrieval-Augmented Generation (RAG) pipeline[cite: 1]. By utilizing PDF parsing and dense vector embeddings, the system ingests academic lecture materials and applies cosine similarity searches to retrieve highly relevant context. This strict academic grounding ensures the AI does not hallucinate, but rather acts as a localized tutor teaching directly from the university syllabus[cite: 1].
+        <strong>EduMentor</strong> is a comprehensive cloud-native web application built on the MERN stack that radically transforms static e-learning into an adaptive, highly personalized tutoring ecosystem. At its core, the platform leverages fine-tuned Large Language Models (LLMs) combined with an advanced Retrieval-Augmented Generation (RAG) pipeline. By utilizing PDF parsing and dense vector embeddings, the system ingests academic lecture materials and applies cosine similarity searches to retrieve highly relevant context. This strict academic grounding ensures the AI does not hallucinate, but rather acts as a localized tutor teaching directly from the university syllabus.
     </p>
 
     <p class="mb-3">
@@ -137,11 +145,11 @@
     </p>
 
     <p class="mb-3">
-        To cater to diverse cognitive preferences, the platform integrates a <strong>Multi-View Explanation Generator (MVEG)</strong>[cite: 1]. Rather than generating a single block of monolithic text, MVEG simultaneously synthesizes explanations across four distinct conceptual views: Simple, Analogy, Code, and Summary[cite: 1]. This architecture allows learners to instantly pivot between learning styles without requiring prompt regeneration or losing context. This multimodal experience is further enriched by an Interactive 3D Avatar Mentor providing real-time visual and voice feedback[cite: 1].
+        To cater to diverse cognitive preferences, the platform integrates a <strong>Multi-View Explanation Generator (MVEG)</strong>. Rather than generating a single block of monolithic text, MVEG simultaneously synthesizes explanations across four distinct conceptual views: Simple, Analogy, Code, and Summary. This architecture allows learners to instantly pivot between learning styles without requiring prompt regeneration or losing context. This multimodal experience is further enriched by an Interactive 3D Avatar Mentor providing real-time visual and voice feedback.
     </p>
 
     <p class="mb-3">
-        To ensure long-term knowledge retention, the <strong>Adaptive Concept Reinforcement Engine (ACE)</strong>[cite: 1] automatically synthesizes the student's chat history and identified knowledge gaps into personalized reinforcement tasks, including targeted flashcards and quizzes[cite: 1]. 
+        To ensure long-term knowledge retention, the <strong>Adaptive Concept Reinforcement Engine (ACE)</strong> automatically synthesizes the student's chat history and identified knowledge gaps into personalized reinforcement tasks, including targeted flashcards and quizzes. 
     </p>
 
     <p class="mb-0">
@@ -295,42 +303,60 @@
     </section>
 
     <!-- Meet Our Team Section -->
-    <section id="team">
+    <section id="team" class="team-section">
         <div class="container">
             <h2 class="text-center">Meet Our <span class="gradient-text">Team</span></h2>
             <div class="grid-team mt-5">
                 <div class="team-card glass-card">
-                    <div class="avatar"><i class="fa-solid fa-user-tie"></i></div>
+                    <div class="avatar">
+                        <img src="assets/team/prof-nuwan-kodagoda.jpg" alt="Prof. Nuwan Kodagoda" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-solid fa-user-tie avatar-fallback"></i>
+                    </div>
                     <h4 class="role-badge">Supervisor</h4>
                     <h3>Prof. Nuwan Kodagoda</h3>
                     <p>Project Supervisor</p>
                 </div>
                 <div class="team-card glass-card">
-                    <div class="avatar"><i class="fa-solid fa-user-tie"></i></div>
+                    <div class="avatar">
+                        <img src="assets/team/dr-kalpani-manathunga.jpg" alt="Dr. Kalpani Manathunga" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-solid fa-user-tie avatar-fallback"></i>
+                    </div>
                     <h4 class="role-badge">Supervisor</h4>
                     <h3>Dr. Kalpani Manathunga</h3>
                     <p>Project Co-Supervisor</p>
                 </div>
                 <div class="team-card glass-card border-accent">
-                    <div class="avatar"><i class="fa-solid fa-user-astronaut"></i></div>
+                    <div class="avatar">
+                        <img src="assets/team/arunod-khgt.jpg" alt="Arunod K. H. G. T." onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-solid fa-user-astronaut avatar-fallback"></i>
+                    </div>
                     <h4 class="role-badge">Team Leader</h4>
                     <h3>Arunod K. H. G. T.</h3>
                     <p>AI Engineer / Full-Stack Developer</p>
                 </div>
                 <div class="team-card glass-card">
-                    <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                    <div class="avatar">
+                        <img src="assets/team/denuwan-as.jpg" alt="Denuwan A. S." onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-solid fa-user avatar-fallback"></i>
+                    </div>
                     <h4 class="role-badge">Team Member</h4>
                     <h3>Denuwan A. S.</h3>
                     <p>Frontend Architecture</p>
                 </div>
                 <div class="team-card glass-card">
-                    <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                    <div class="avatar">
+                        <img src="assets/team/nimesha-mgs.jpg" alt="Nimesha M. G. S." onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-solid fa-user avatar-fallback"></i>
+                    </div>
                     <h4 class="role-badge">Team Member</h4>
                     <h3>Nimesha M. G. S.</h3>
                     <p>Backend / DevOps</p>
                 </div>
                 <div class="team-card glass-card">
-                    <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                    <div class="avatar">
+                        <img src="assets/team/nawarathna-nds.jpg" alt="Nawarathna N. D. S." onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-solid fa-user avatar-fallback"></i>
+                    </div>
                     <h4 class="role-badge">Team Member</h4>
                     <h3>Nawarathna N. D. S.</h3>
                     <p>Vector Data Specialist</p>
